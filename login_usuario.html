@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var tentativaMax = 3;
+            var tentativaMin = 1;
+
+            var usuario =  "mvsgurtz";
+            var senha = "12345";
+
+
+        while( tentativaMin <= tentativaMax){
+            
+            var usuarioPop =  prompt("Digite seu usuário: ");
+            var senhaPop = prompt("Digite a sua senha: ");
+
+            if(usuario == usuarioPop && senha ==  senhaPop){
+                alert("Bem-Vindo " + usuario);
+                tentativaMin = tentativaMax;
+            } 
+            else {
+                alert("Tente Novamente!");
+            }
+        
+            tentativaMin = tentativaMin + 1
+        } 
+
+    </script>
+    
+</body>
+</html>

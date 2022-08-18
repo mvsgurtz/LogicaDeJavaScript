@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function pulaLinha(){
+            document.write("<br>");
+        }
+        function demonstracao(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+        var totalFamiliares = parseInt( prompt("Digite a quantidade de familiares: "));
+        var numero = 1;
+        var totalIdades = 0;
+        while(numero <= totalFamiliares){
+            var idade = parseInt( prompt("Digite a Idade: "));
+            totalIdades = totalIdades + idade;
+            numero = numero + 1;
+        }
+        var mediaIdades = totalIdades/totalFamiliares;
+        demonstracao( " A media dos familiares é " + mediaIdades);
+
+    </script>
+    
+</body>
+</html>
